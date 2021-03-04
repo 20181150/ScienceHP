@@ -1,0 +1,335 @@
+<!--
+	こんにちは。ソースコード見に来てくださりありがとうございます。
+
+	iOSのSafariの挙動がようわからん。何故CSSが遅れて実行されるのか？もうめんどくさいから修正はしない。
+
+	吾輩はやれば出来る子である。
+  　　　∩∩
+	　　（´･ω･）
+  　 ＿|　⊃／(＿＿_
+  ／　└-(＿＿＿_／
+	￣￣￣￣￣￣￣
+  やる気はまだない
+
+  　 ⊂⌒／ヽ-、＿_
+  ／⊂_/＿＿＿＿ ／
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>黎明党</title>
+
+	<link rel="stylesheet" href="content/css/style.css" media="all">
+	<link rel="stylesheet" href="content/css/normalize.css" media="all">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="favicon.png" type="image/vnd.microsoft.icon" />
+	<link rel="icon" href="favicon.png" type="image/vnd.microsoft.icon" />
+	<link rel="apple-touch-icon" href="favicon.png">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+	<!-- robots -->
+	<meta name="robots" content="noindex,nofollow,noarchive" />
+
+	<!-- scroll -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="content/js/scroll.js"></script>
+
+	<!-- toggle -->
+	<link rel="stylesheet" href="content/css/moretoggles.min.css">
+	<script type="text/javascript" src="content/js/toggle.js"></script>
+</head>
+
+<body data-rsssl=1>
+	<div class="wrap">
+		<header>
+			<div class="header-wrap">
+				<div class="header-left">
+					<h1><a href="index.html" title="logo">
+							<img src="content/img/logo.png" width="300">
+						</a></h1>
+				</div><!-- /.header-left -->
+				<div class="header-right">
+					<ul>
+						<li><a href="#" title="ヘッダー1">ヘッダー1</a></li>
+						<li><a href="#" title="ヘッダー2">ヘッダー2</a></li>
+						<li><a href="#" title="ヘッダー3">ヘッダー3</a></li>
+						<li><a href="#" title="ヘッダー4">ヘッダー4</a></li>
+						<li><a href="#" title="ヘッダー5">ヘッダー5</a></li>
+					</ul>
+				</div><!-- /.header-right -->
+				<div class="clear"></div>
+			</div><!-- /.header-wrap -->
+		</header><!-- /header -->
+
+		<div class="home-wrap">
+
+			<div class="home-message">
+				<div class="home-message-wrap">
+					<h2>実験用サイト made by IBA 😂😂</h2>
+					<p>黎明党</p>
+				</div><!-- /.home-message-wrap -->
+			</div><!-- /.home-message -->
+
+			<div class="home-navi">
+				<div class="home-navi-wrap">
+					<ul>
+						<li><a href="#mainDetails1" title="政策1" class="home-navi-button home-navi-button-left" onclick="mainDetails1.open = true;document.getElementById('1').checked=false;">政策1<span class="count">生態系</span></a></li>
+						<li><a href="#mainDetails2" title="政策2" class="home-navi-button" onclick="mainDetails2.open = true;document.getElementById('2').checked=false;">政策2<br><span class="count">電気自動車</span></a></li>
+						<li><a href="#mainDetails3" title="政策3" class="home-navi-button" onclick="mainDetails3.open = true;document.getElementById('3').checked=false;">政策3<br><span class="count">化学物質汚染</span></a></li>
+						<li><a href="#mainDetails4" title="政策4" class="home-navi-button home-navi-button-right" onclick="mainDetails4.open = true;document.getElementById('4').checked=false;">政策4<br><span class="count">気候変動</span></a></li>
+
+					</ul>
+					<div class="clear"></div>
+				</div><!-- /.home-nabi-wrap -->
+			</div><!-- /.home-navi -->
+
+			<div class="home-about">
+				<div class="home-about-wrap">
+					<div class="home-about-wrap-left">
+						<span class="home-about-subtitle">ABOUT 黎明党</span>
+						<h2><span class="home-about-underline">全ての国民が平等に、<br>効率良く、信頼できるようにする</span></h2>
+						<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+						<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。<br>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。<br>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+						<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+					</div><!-- /.home-about-wrap-left -->
+				</div><!-- /.home-about-wrap -->
+			</div>
+
+			<div class="home-main">
+				<div class="home-main-about-wrap">
+					<span class="home-about-subtitle">DATABASE</span>
+					<h2><span class="home-about-underline">政策詳細</span></h2>
+					<span class="home-main-about-wrap-info">ここにテキストを入力。ここにテキストを入力。<br>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</span>
+				</div><!-- /.home-main-about-wrap -->
+
+				<div class="home-main-db-wrap">
+					<details open="true" id="mainDetails1" onclick="setCheckbox1()">
+						<summary>
+							<div class="home-main-db-title">
+
+								<h3><a href="#" title="生態系">1,生態系</a>
+									<span class="click">クリックして
+										<div class="mt-yesno">
+											<input id="1" type="checkbox" onclick="setEditEnable1()" />
+											<label for="1"></label>
+										</div>
+									</span>
+								</h3>
+							</div><!-- /.home-main-db-title -->
+						</summary>
+						<div class="details-content">
+							<div class="home-main-db-left">
+								<img src="content/img/dbcompany.jpg" title="マーケティング企業" width="390">
+								<div class="home-main-db-left-text">
+									<p>生態系はなになにである。。</p>
+									<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。。</p>
+								</div><!-- /.home-main-db-left-text -->
+							</div><!-- /.home-main-db-left -->
+							<div class="home-main-db-right">
+								<div class="home-main-db-right-box">
+									<h3>内容</h3>
+									<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box">
+									<h3>提供サービス</h3>
+									<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box">
+									<h3>ここにテキストを入力。</h3>
+									<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box home-main-db-right-box-last">
+									<h3>メンバー</h3>
+									<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+								</div><!-- /.home-main-db-right-box -->
+							</div><!-- /.home-main-db-right -->
+						</div>
+						<div class="clear"></div>
+					</details>
+				</div><!-- /.home-main-db-wrap -->
+
+				<div class="home-main-db-wrap">
+					<details open="true" id="mainDetails2" onclick="setCheckbox2()">
+						<summary>
+							<div class="home-main-db-title">
+								<h3><a href="#" title="電気自動車">2,電気自動車</a>
+									<span class="click">クリックして
+										<div class="mt-yesno">
+											<input id="2" type="checkbox" onclick="setEditEnable2()" />
+											<label for="2"></label>
+										</div>
+									</span>
+								</h3>
+							</div><!-- /.home-main-db-title -->
+						</summary>
+						<div class="details-content">
+							<div class="home-main-db-left">
+								<img src="content/img/dbElectricCar.jpg" title="電気自動車" width="390">
+								<div class="home-main-db-left-text">
+									<p>電気自動車の利点は。。。。。</p>
+									<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+								</div><!-- /.home-main-db-left-text -->
+							</div><!-- /.home-main-db-left -->
+							<div class="home-main-db-right">
+								<div class="home-main-db-right-box">
+									<h3>メリット</h3>
+									<p>電気自動車では、一酸化炭素などの有害な物質が一切排出されません。<br>SAや道の駅には<span>無料</span>の充電所もあります。国からも補助が出るため<span>安価</span>に購入することが可能です。</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box">
+									<h3>価格</h3>
+									<p>ああああ</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box home-main-db-right-box-last">
+									<h3>言語</h3>
+									<p>ああsdfjklj</p>
+								</div><!-- /.home-main-db-right-box -->
+							</div><!-- /.home-main-db-right -->
+						</div>
+						<div class="clear"></div>
+					</details>
+				</div><!-- /.home-main-db-wrap -->
+
+				<div class="home-main-db-wrap">
+					<details open="true" id="mainDetails3" onclick="setCheckbox3()">
+						<summary>
+							<div class="home-main-db-title">
+								<h3><a href="#" title="化学物質汚染">3,化学物質汚染</a>
+									<span class="click">クリックして
+										<div class="mt-yesno">
+											<input id="3" type="checkbox" onclick="setEditEnable3()" />
+											<label for="3"></label>
+										</div>
+									</span>
+								</h3>
+							</div><!-- /.home-main-db-title -->
+						</summary>
+						<div class="details-content">
+							<div class="home-main-db-left">
+								<img src="content/img/dbmedia.jpg" title="マーケティング企業" width="390">
+								<div class="home-main-db-left-text">
+									<p>化学物質汚染の問題点あ。。。。。</p>
+									<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+								</div><!-- /.home-main-db-left-text -->
+							</div><!-- /.home-main-db-left -->
+							<div class="home-main-db-right">
+								<div class="home-main-db-right-box">
+									<h3>カテゴリー</h3>
+									<p>ああああ</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box">
+									<h3>タイプ</h3>
+									<p>iiii</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box home-main-db-right-box-last">
+									<h3>プラットフォーム</h3>
+									<p>uuu</p>
+								</div><!-- /.home-main-db-right-box -->
+							</div><!-- /.home-main-db-right -->
+						</div>
+						<div class="clear"></div>
+					</details>
+				</div><!-- /.home-main-db-wrap -->
+
+				<div class="home-main-db-wrap">
+					<details open="true" id="mainDetails4" onclick="setCheckbox4()">
+						<summary>
+							<div class="home-main-db-title">
+								<h3><a href="#" title="気候変動">4,気候変動</a>
+									<span class="click">クリックして
+										<div class="mt-yesno">
+											<input id="4" type="checkbox" onclick="setEditEnable4()" />
+											<label for="4"></label>
+										</div>
+									</span>
+								</h3>
+							</div><!-- /.home-main-db-title -->
+						</summary>
+						<div class="details-content">
+							<div class="home-main-db-left">
+								<img src="content/img/dbwebdesign.jpg" title="気候変動" width="390">
+								<div class="home-main-db-left-text">
+									<p>気候変動とは。。。</p>
+									<p>ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。ここにテキストを入力。</p>
+								</div><!-- /.home-main-db-left-text -->
+							</div><!-- /.home-main-db-left -->
+							<div class="home-main-db-right">
+								<div class="home-main-db-right-box">
+									<h3>カテゴリー</h3>
+									<p>ああああ</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box">
+									<h3>業界</h3>
+									<p>いいいい</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box">
+									<h3>色</h3>
+									<p>ああああ</p>
+								</div><!-- /.home-main-db-right-box -->
+								<div class="home-main-db-right-box home-main-db-right-box-last">
+									<h3>国</h3>
+									<p>そういうこと</p>
+								</div><!-- /.home-main-db-right-box -->
+							</div><!-- /.home-main-db-right -->
+						</div>
+						<div class="clear"></div>
+					</details>
+				</div><!-- /.home-main-db-wrap -->
+
+			</div><!-- /.home-main -->
+		</div><!-- /.home-wrap -->
+
+		<footer>
+			<div class="footer-bar">
+				<div class="footer-bar-wrap">
+					<ul>
+						<li><a href="#mainDetails1" title="生態系" class="footer-bar-button footer-bar-button-right" onclick="mainDetails1.open = true;document.getElementById('1').checked=false;">政策1<span class="count">生態系</span></a></li>
+						<li><a href="#mainDetails2" title="電気自動車" class="footer-bar-button" onclick="mainDetails2.open = true;document.getElementById('2').checked=false;">政策2<br><span class="count">電気自動車</span></a></li>
+						<li><a href="#mainDetails3" title="化学物質汚染" class="footer-bar-button" onclick="mainDetails3.open = true;document.getElementById('3').checked=false;">政策3<span class="count">化学物質汚染</span></a></li>
+						<li><a href="#mainDetails4" title="気候変動" class="footer-bar-button footer-bar-button-left" onclick="mainDetails4.open = true;document.getElementById('4').checked=false;">政策4<br><span class="count">気候変動</span></a></li>
+
+					</ul>
+					<div class="clear"></div>
+				</div><!-- /.footer-bar-wrap -->
+			</div><!-- /.footer-bar -->
+
+			<div class="footer-top-wrap">
+				<div class="footer-top-column-left">
+					<img src="content/img/logo.png" width="250">
+					<!-- <h1>Logoを貼り付ける</h1> -->
+					<p>黎明党</p>
+				</div><!-- /.footer-top-column-left -->
+				<div class="footer-top-column-right">
+					<p>C組クラスの、黎明党です。</p>
+					<p>iOSのSafariの挙動がようわからん。ふんぬ。何故jsが遅れて実行されるのか？もうめんどくさいから修正はしない。</p>
+					<p>ようするにPC版Chrome推奨サイトということです。</p>
+				</div><!-- /.footer-top-column-right -->
+				<div class="clear"></div>
+			</div><!-- /.footer-top-wrap -->
+
+			<div class="footer-bottom">
+				<div class="footer-bottom-wrap">
+					<div class="footer-bottom-left">
+
+					</div><!-- /.footer-bottom-left -->
+					<div class="footer-bottom-right">
+						<ul>
+							<li><a href="#" title="プライバシーポリシー">プライバシーポリシー</a></li>
+							<li><a href="#" title="お問い合わせ">お問い合わせ</a></li>
+						</ul>
+						<p>Copyright © 2021 黎明党. All Rights Reserved.</p>
+					</div><!-- /.footer-bottom-right -->
+					<div class="clear"></div>
+				</div><!-- /.footer-bottom-wrap -->
+			</div><!-- /.footer-bottom -->
+		</footer><!-- /footer -->
+	</div><!-- /.wrap -->
+</body>
+
+</html>
