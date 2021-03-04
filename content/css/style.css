@@ -296,7 +296,8 @@ header {
 .home-about {
   line-height: 1.5em;
   height: 500px;
-  background-image: url(../img/about-bg.jpg);
+  /*background-image: url(../img/about-bg.jpg);*/
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
