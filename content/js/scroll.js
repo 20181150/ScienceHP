@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   $("a[href^=#]").click(function () {
     var speed = 500;
     var href = $(this).attr("href");
