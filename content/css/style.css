@@ -352,7 +352,6 @@ summary {
 
 summary::-webkit-details-marker {
   display: none;
-  /* 矢印を消す */
 }
 
 summary:before, summary:after {
