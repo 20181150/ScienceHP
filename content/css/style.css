@@ -205,7 +205,7 @@ header {
   font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
 }
 
-.home-message-wrap h2 {
+.home-message-wrap h1 {
   margin: 0 0 0 60px;
   font-size: 43px;
   font-weight: 500;
@@ -296,13 +296,13 @@ header {
 .home-about {
   line-height: 1.5em;
   height: 500px;
-  /*background-image: url(../img/about-bg.jpg);*/
+  background-image: url(../img/about-bg.jpg);
   background-color: white;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
-.home-about h2 {
+.home-about h1 {
   font-size: 35px;
   line-height: 1.5em;
   margin: 15px 0px 30px 0;
@@ -480,6 +480,10 @@ details[open] .details-content {
   margin: 0 0 5px 0;
   font-size: 15px;
   line-height: 1.7em;
+}
+
+.home-main-db-left span {
+  font-size: 25px;
 }
 
 .home-main-db-left-text {
