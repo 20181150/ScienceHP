@@ -447,7 +447,7 @@ details[open] .details-content {
   margin: 0;
   padding: 20px 30px;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .home-main-db-title a {
@@ -475,15 +475,15 @@ details[open] .details-content {
   float: left;
 }
 
-.home-main-db-left-text {
-  margin: 30px;
-}
-
 .home-main-db-left p {
   color: #4c4c4c;
   margin: 0 0 5px 0;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.7em;
+}
+
+.home-main-db-left-text {
+  margin: 30px;
 }
 
 .home-main-db-right {
@@ -505,7 +505,7 @@ details[open] .details-content {
   margin: 0;
   color: #878787;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .home-main-db-right-box p span {
@@ -515,11 +515,17 @@ details[open] .details-content {
 .home-main-db-right-box a {
   color: #878787;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .home-main-db-right-box a:hover {
   text-decoration: underline;
+}
+
+.home-main-db-right-box img {
+  float: right;
+  height: 100px;
+  margin-left: 30px;
 }
 
 .home-main-db-right-box-last {

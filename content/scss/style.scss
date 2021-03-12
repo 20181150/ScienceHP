@@ -490,7 +490,7 @@ details[open] {
     margin: 0;
     padding: 20px 30px;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   a {
@@ -517,17 +517,17 @@ details[open] {
 .home-main-db-left {
   width: 390px;
   float: left;
+
+  p {
+    color: #4c4c4c;
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    line-height: 1.7em;
+  }
 }
 
 .home-main-db-left-text {
   margin: 30px;
-}
-
-.home-main-db-left p {
-  color: #4c4c4c;
-  margin: 0 0 5px 0;
-  font-size: 13px;
-  line-height: 1.7em;
 }
 
 .home-main-db-right {
@@ -549,7 +549,7 @@ details[open] {
     margin: 0;
     color: #878787;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     span {
       color: black;
     }
@@ -558,11 +558,16 @@ details[open] {
   a {
     color: #878787;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
 
     &:hover {
       text-decoration: underline;
     }
+  }
+  img {
+    float: right;
+    height: 100px;
+    margin-left: 30px;
   }
 }
 
