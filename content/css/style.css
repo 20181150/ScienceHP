@@ -296,10 +296,17 @@ header {
 .home-about {
   line-height: 1.5em;
   height: 500px;
-  background-image: url(../img/about-bg.jpg);
   background-color: white;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.home-about img {
+  float: right;
+  height: 400px;
+  margin-top: 50px;
+  margin-right: 50px;
+  display: flex;
 }
 
 .home-about h1 {
