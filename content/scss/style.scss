@@ -523,6 +523,9 @@ details[open] {
     margin: 0 0 5px 0;
     font-size: 15px;
     line-height: 1.7em;
+    a {
+      word-break: break-all;
+    }
   }
   span {
     font-size: 25px;

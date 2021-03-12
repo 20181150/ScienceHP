@@ -482,6 +482,10 @@ details[open] .details-content {
   line-height: 1.7em;
 }
 
+.home-main-db-left p a {
+  word-break: break-all;
+}
+
 .home-main-db-left span {
   font-size: 25px;
 }
