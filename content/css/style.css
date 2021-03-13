@@ -324,10 +324,11 @@ header {
 }
 
 .home-about-wrap-left {
-  width: 700px;
+  width: 600px;
   float: left;
   padding: 75px 0 0 0;
   margin: 0;
+  word-break: break-all;
 }
 
 .home-about-wrap .home-about-wrap-left p {
