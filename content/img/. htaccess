@@ -1,2 +1,10 @@
 # Directory List
-Options Indexes
+Options -Indexes
+
+# AccessControl referer
+SetEnvIf Referer "^http://20181150\.github\.io" chk_url
+SetEnvIf Referer "^https://20181150\.github\.io" chk_url
+
+order deny,allow
+deny from all
+allow from env=chk_url
