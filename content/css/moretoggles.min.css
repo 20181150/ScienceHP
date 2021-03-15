@@ -162,6 +162,7 @@
 .mt-yesno input:checked + label:after {
   color: rgba(0, 0, 0, 0.2);
 }
+/*
 .mt-yesno-blush input:disabled,
 .mt-yesno-fruit input:disabled,
 .mt-yesno-garden input:disabled,
@@ -176,7 +177,7 @@
 .mt-yesno input:disabled + label {
   background: #ccc !important;
   cursor: not-allowed !important;
-}
+}*/
 .mt-yesno-garden label {
   background: #ff2e63;
 }
